@@ -1,4 +1,4 @@
-# README
+# RAILS SSH LOGIN, DB BACKUP & DOWNLOAD
 
 ## Login server via SSH, extract database dump and download it to local machine
 
@@ -15,8 +15,8 @@ SERVER_DATABASE_PASS=server_database_password
 
 ### Put your server .pem file to credentials
 
-You have to put your server pem file to the config/credentials directory in the project.
-This location is added in gitignore. This pem file will not pass through git
+You have to put your server pem file to the **config/credentials** directory in the project.
+This location is added in gitignore. This pem file will not pass through git.
 
 ### Run the rake task:
 
