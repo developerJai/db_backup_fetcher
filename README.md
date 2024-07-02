@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Login server via SSH, extract database dump and download it to local machine
 
-Things you may want to cover:
+### Setup Environment variables in .env file
 
-* Ruby version
+```
+SERVER_HOST=your_server_public_domain_or_ip
+SERVER_USER=your_server_username
+SERVER_PEMFILE=your_pem_file_name_in_config/credentials_directory
+SERVER_DATABASE_NAME=server_database_name
+SERVER_DATABASE_USER=server_database_username
+SERVER_DATABASE_PASS=server_database_password
+```
 
-* System dependencies
+### Put your server .pem file to credentials
 
-* Configuration
+You have to put your server pem file to the config/credentials directory in the project.
+This location is added in gitignore. This pem file will not pass through git
 
-* Database creation
+### Run the rake task:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`rake db:transfer_dump`

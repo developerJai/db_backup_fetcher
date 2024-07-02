@@ -99,6 +99,7 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dotenv (3.1.2)
     drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
@@ -138,8 +139,11 @@ GEM
       net-protocol
     net-protocol (0.2.2)
       timeout
+    net-scp (4.0.0)
+      net-ssh (>= 2.6.5, < 8.0.0)
     net-smtp (0.5.0)
       net-protocol
+    net-ssh (7.2.3)
     nio4r (2.7.3)
     nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
@@ -250,8 +254,11 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  dotenv
   importmap-rails
   jbuilder
+  net-scp
+  net-ssh
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.4)
   redis (>= 4.0.1)
